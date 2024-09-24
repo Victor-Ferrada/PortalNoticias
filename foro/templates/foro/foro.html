@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Foro de Noticas</h1>
+    {% for noticias in minoticia %}
+        <hr>
+        <h1>Titulo:{{ noticias.title }}</h1>
+        <p>Descripcion:{{ noticias.description }}</p>
+        <p>Fecha Creacion:{{ noticias.created|date:" F, Y" }}</p>
+    {% endfor %}
+</body>
+</html>
